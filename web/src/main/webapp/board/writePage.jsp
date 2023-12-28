@@ -40,19 +40,7 @@
                                                                      value="${post.title == null ? '' : post.title}"/>
                         </td>
                     </tr>
-                    <tr>
-                        <td style="text-align: center; font-size: 1.4rem; font-weight: 400">작성일</td>
-                        <td style="border: 0.5px solid black; width: 90%; height: 40px;" name="postdate">
-                            <%
-                                Date date = new Date();
-                                SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy-MM-dd");
-                                String strDate = simpleDate.format(date);
-                            %>
-                            <%=strDate%>
-                        </td>
-                    </tr>
                 </table>
-
                 <!-- 에디터를 적용할 요소 (컨테이너) -->
                 <div id="content"></div>
 
